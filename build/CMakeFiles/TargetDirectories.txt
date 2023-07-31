@@ -1,0 +1,3 @@
+C:/Users/user/Documents/LevelUP/LevelUP/build/CMakeFiles/cmake_testapp.dir
+C:/Users/user/Documents/LevelUP/LevelUP/build/CMakeFiles/edit_cache.dir
+C:/Users/user/Documents/LevelUP/LevelUP/build/CMakeFiles/rebuild_cache.dir
