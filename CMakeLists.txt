@@ -1,6 +1,7 @@
-cmake_minimum_required (VERSION 2.24)
-project (cmake_testapp)
+cmake_minimum_required (VERSION 3.8)
 
-set (CMAKE_CXX_STANDART 17)
+add_executable (Project "opencv_test.cpp")
 
-add_executable (cmake_testapp cmake_test.cpp)
+find_package(OpenCV REQUIRED)
+
+target_link_libraries(Project ${OpenCV_LIBS})
