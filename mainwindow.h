@@ -3,6 +3,12 @@
 
 #include <QMainWindow>
 
+#include <opencv2/opencv.hpp>
+
+#include <QFileDialog>
+#include <QImage>
+#include <QPixmap>
+
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
@@ -17,13 +23,17 @@ public:
 
 private:
     Ui::MainWindow *ui;
+    cv::Mat img;
+    QImage image;
+    QPixmap pixel;
 
 private slots:
-    void PushButtonNumber();
-    void PushButtonMath();
-    void PushButtonEquals();
-    void PushButtonClear();
-    void PushButtonDot();
-    void PushButtonPlusMinus();
+    void OriginPressed();
+    void BlurPressed();
+    void GaussianBlurPressed();
+    void ThresholdPressed();
+    void GrayPressed();
+    void HSVPressed();
+    void CannyPressed();
 };
 #endif // MAINWINDOW_H
